@@ -3,7 +3,7 @@ import tensorflow as tf
 from PIL import Image
 import numpy as np
 
-model = tf.keras.models.load_model('my_model.h5')
+model = tf.keras.models.load_model('resnet_model.h5')
 
 def predict(image):
     img = Image.open(image).convert('RGB')  
